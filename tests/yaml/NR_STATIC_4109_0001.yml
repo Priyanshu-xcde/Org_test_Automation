@@ -1,0 +1,10 @@
+pipelines:
+  - name: pipelines_NR_Static_4109_0001
+    steps:
+      - name: NR_Static_4109_0001
+        type: Bash
+        configuration:
+          nodePool: static_node_u18_rootless
+        execution:
+          onExecute:
+            - echo "executing step on static non root U18 node pool"
